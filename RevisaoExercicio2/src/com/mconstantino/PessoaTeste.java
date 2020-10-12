@@ -1,6 +1,6 @@
 package com.mconstantino;
 
-public class Main {
+public class PessoaTeste {
 
     public static void main(String[] args) {
 
