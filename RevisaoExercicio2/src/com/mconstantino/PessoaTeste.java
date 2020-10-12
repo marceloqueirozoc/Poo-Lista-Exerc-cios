@@ -6,9 +6,11 @@ public class PessoaTeste {
 
         Pessoa pessoa = new Pessoa();
 
-        pessoa.setNome("Ronaldo");
-        pessoa.setIdade(33);
+        pessoa.setNome("Pedro");
+        pessoa.setIdade(27);
 
+        pessoa.fazAniversario();
+        pessoa.fazAniversario();
         pessoa.fazAniversario();
         pessoa.fazAniversario();
         pessoa.fazAniversario();
