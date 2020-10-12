@@ -4,9 +4,9 @@ public class Porta {
 
     private boolean aberta;
     private String cor;
-    private float dimensaoX;
-    private float dimensaoY;
-    private float dimensaoZ;
+    private double dimensaoX;
+    private double dimensaoY;
+    private double dimensaoZ;
 
     public boolean isAberta() {
         return aberta;
@@ -24,27 +24,27 @@ public class Porta {
         this.cor = cor;
     }
 
-    public float getDimensaoX() {
+    public double getDimensaoX() {
         return dimensaoX;
     }
 
-    public void setDimensaoX(float dimensaoX) {
+    public void setDimensaoX(double dimensaoX) {
         this.dimensaoX = dimensaoX;
     }
 
-    public float getDimensaoY() {
+    public double getDimensaoY() {
         return dimensaoY;
     }
 
-    public void setDimensaoY(float dimensaoY) {
+    public void setDimensaoY(double dimensaoY) {
         this.dimensaoY = dimensaoY;
     }
 
-    public float getDimensaoZ() {
+    public double getDimensaoZ() {
         return dimensaoZ;
     }
 
-    public void setDimensaoZ(float dimensaoZ) {
+    public void setDimensaoZ(double dimensaoZ) {
         this.dimensaoZ = dimensaoZ;
     }
 
@@ -67,5 +67,16 @@ public class Porta {
         }
         System.out.println("A porta está fechada!");
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Porta{" +
+                "Aberta = " + aberta +
+                ", Cor = '" + cor + '\'' +
+                ", Largura = " + dimensaoX +
+                ", Altura = " + dimensaoY +
+                ", Espessura = " + dimensaoZ +
+                '}';
     }
 }
